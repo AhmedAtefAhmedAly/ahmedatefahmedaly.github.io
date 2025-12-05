@@ -711,10 +711,50 @@ footer.sticky-bottom {
 
 // Repositories
 
-@media (min-width: 768px) {
-  .repo {
-    max-width: 50%;
+.repo {
+  max-width: 30rem;
+}
+
+.repo-card {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.5rem;
+  background-color: var(--global-card-bg-color);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
   }
+}
+
+.repo-card-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-decoration: none;
+  padding: 1rem;
+  color: var(--global-text-color);
+}
+
+.repo-card-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.repo-card-text {
+  text-align: left;
+}
+
+.repo-card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.repo-card-subtitle {
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
 }
 
 // Blog

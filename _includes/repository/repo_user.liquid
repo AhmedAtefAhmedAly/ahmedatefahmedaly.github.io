@@ -18,17 +18,16 @@
     {% comment %} https://github.com/anuraghazra/github-readme-stats?tab=readme-ov-file#available-locales {% endcomment %}
 {% endcase %}
 
-<div class="repo p-2 text-center">
-  <a href="https://github.com/{{ include.username }}">
+<div class="repo p-2 text-center repo-card">
+  <a href="https://github.com/{{ include.username }}" class="repo-card-link" target="_blank" rel="noopener noreferrer">
     <img
-      class="only-light w-100"
-      alt="{{ include.username }}"
-      src="https://github-readme-stats.vercel.app/api/?username={{ include.username }}&theme={{ site.repo_theme_light }}&locale={{ lang }}&show_icons=true"
+      src="{{ '/assets/img/github-sign.png' | relative_url }}"
+      alt="{{ include.username }} GitHub profile"
+      class="repo-card-icon"
     >
-    <img
-      class="only-dark w-100"
-      alt="{{ include.username }}"
-      src="https://github-readme-stats.vercel.app/api/?username={{ include.username }}&theme={{ site.repo_theme_dark }}&locale={{ lang }}&show_icons=true"
-    >
+    <div class="repo-card-text">
+      <div class="repo-card-title">{{ include.username }}</div>
+      <div class="repo-card-subtitle">{{ 'GitHub Profile' | t }}</div>
+    </div>
   </a>
 </div>
