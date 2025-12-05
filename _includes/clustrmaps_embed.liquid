@@ -1,0 +1,65 @@
+<div id="clustrmaps-container" class="my-4 text-center"></div>
+<noscript>
+  <a href="https://clustrmaps.com/site/1c8mv" title="ClustrMaps">
+    <img src="//www.clustrmaps.com/map_v2.png?d=1uIcez61rBeQ53qCFn7VwNyW0lm7uyDepcXgHsZS9Lo&cl=ffffff" alt="ClustrMaps visitors map">
+  </a>
+</noscript>
+<script>
+  (function () {
+    const MAP_ID = "1uIcez61rBeQ53qCFn7VwNyW0lm7uyDepcXgHsZS9Lo";
+    const themeColors = {
+      light: { co: "ffffff", cl: "1c1c1c", cmo: "3acc3a", cmn: "3acc3a", ct: "808080" },
+      dark: { co: "1c1c1c", cl: "ffffff", cmo: "3acc3a", cmn: "3acc3a", ct: "cccccc" }
+    };
+
+    const container = document.getElementById("clustrmaps-container");
+    if (!container) return;
+
+    function resolveTheme() {
+      const explicit = document.documentElement.getAttribute("data-theme");
+      if (explicit === "dark" || explicit === "light") {
+        return explicit;
+      }
+      return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    }
+
+    function loadClustrMaps(theme) {
+      const cfg = themeColors[theme] || themeColors.light;
+      const existingScript = document.getElementById("clustrmaps");
+      if (existingScript) {
+        existingScript.remove();
+      }
+      container.innerHTML = "";
+      const script = document.createElement("script");
+      script.id = "clustrmaps";
+      script.type = "text/javascript";
+      script.src =
+        "//cdn.clustrmaps.com/map_v2.js?" +
+        `cl=${cfg.cl}&w=a&t=tt&d=${MAP_ID}&co=${cfg.co}&cmo=${cfg.cmo}&cmn=${cfg.cmn}&ct=${cfg.ct}`;
+      container.appendChild(script);
+    }
+
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)");
+    const handleMediaChange = () => {
+      if (!document.documentElement.getAttribute("data-theme")) {
+        loadClustrMaps(prefersDark.matches ? "dark" : "light");
+      }
+    };
+    if (prefersDark.addEventListener) {
+      prefersDark.addEventListener("change", handleMediaChange);
+    } else if (prefersDark.addListener) {
+      prefersDark.addListener(handleMediaChange);
+    }
+
+    const observer = new MutationObserver((mutations) => {
+      for (const mutation of mutations) {
+        if (mutation.type === "attributes" && mutation.attributeName === "data-theme") {
+          loadClustrMaps(resolveTheme());
+        }
+      }
+    });
+    observer.observe(document.documentElement, { attributes: true });
+
+    loadClustrMaps(resolveTheme());
+  })();
+</script>

@@ -29,6 +29,9 @@
   --global-back-to-top-text-color: #{$white-color};
   --global-newsletter-bg-color: #{$white-color};
   --global-newsletter-text-color: #{$black-color};
+  --email-popup-bg-color: #{$grey-900};
+  --email-popup-text-color: #{$white-color};
+  --email-popup-border-color: rgba(0, 0, 0, 0.4);
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
@@ -100,6 +103,9 @@ html[data-theme="dark"] {
   --global-back-to-top-text-color: #{$black-color};
   --global-newsletter-bg-color: #{$grey-color-light};
   --global-newsletter-text-color: #{$grey-color-dark};
+  --email-popup-bg-color: #{$white-color};
+  --email-popup-text-color: #{$black-color};
+  --email-popup-border-color: rgba(255, 255, 255, 0.4);
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #215d42;

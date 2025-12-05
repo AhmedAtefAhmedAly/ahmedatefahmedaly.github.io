@@ -208,6 +208,45 @@ ul.task-list input[type="checkbox"] {
       margin: 0;
     }
   }
+
+  .contact-icons {
+    margin-top: 0.75rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    line-height: 1;
+
+    a,
+    .email-toggle {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      border: 0;
+      background: transparent;
+      color: inherit;
+      padding: 0;
+      cursor: pointer;
+      line-height: 1;
+      img,
+      svg {
+        width: 2rem;
+        height: 2rem;
+        margin-bottom: 0;
+      }
+
+      i::before {
+        color: var(--global-text-color);
+        transition: color 0.2s ease-in-out;
+      }
+
+      &:hover i::before {
+        color: var(--global-theme-color);
+      }
+    }
+  }
 }
 
 .profile.float-right {
@@ -355,6 +394,28 @@ ul.task-list input[type="checkbox"] {
       }
     }
   }
+
+  .navbar-social-icons {
+    .social {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 1.25rem;
+
+      a {
+        line-height: 1;
+
+        i::before {
+          color: var(--global-text-color);
+          transition: color 0.2s ease-in-out;
+        }
+
+        &:hover i::before {
+          color: var(--global-theme-color);
+        }
+      }
+    }
+  }
 }
 
 .navbar-toggler {
@@ -411,13 +472,25 @@ ul.task-list input[type="checkbox"] {
 
 // Social (bottom)
 
+// Social links (shared styles)
 .social {
   text-align: center;
 
   .contact-icons {
     font-size: 4rem;
 
-    a {
+    a,
+    .email-toggle {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 0;
+      background: transparent;
+      color: inherit;
+      padding: 0;
+      cursor: pointer;
+      line-height: 1;
+
       img {
         width: 3.2rem;
         height: 3.2rem;
@@ -452,6 +525,92 @@ ul.task-list input[type="checkbox"] {
 
   .contact-note {
     font-size: 0.8rem;
+  }
+}
+
+.about-social-inline {
+  text-align: left;
+  margin-bottom: 1rem;
+
+  .contact-icons {
+    font-size: 2.2rem;
+    display: inline-flex;
+    gap: 0.75rem;
+
+    a,
+    button.email-toggle {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 0;
+      background: transparent;
+      color: inherit;
+      padding: 0;
+      cursor: pointer;
+      line-height: 1;
+
+      img,
+      svg {
+        margin-bottom: 0;
+        width: 2.2rem;
+        height: 2.2rem;
+      }
+
+      i::before {
+        color: var(--global-text-color);
+        transition: color 0.2s ease-in-out;
+      }
+
+      &:hover i::before {
+        color: var(--global-theme-color);
+      }
+    }
+  }
+}
+
+.contact-icons {
+  .email-icon-wrapper {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+
+  .email-toggle {
+    list-style: none;
+  }
+
+  .email-toggle::-webkit-details-marker {
+    display: none;
+  }
+
+  .email-display {
+    position: absolute;
+    top: calc(100% + 0.35rem);
+    left: 50%;
+    transform: translate(-50%, -0.35rem);
+    background-color: var(--email-popup-bg-color);
+    color: var(--email-popup-text-color);
+    border: 1px solid var(--email-popup-border-color);
+    font-size: 0.45em;
+    padding: 0.35rem 0.6rem;
+    border-radius: 0.4rem;
+    white-space: nowrap;
+    box-shadow: 0 0.35rem 0.9rem rgba(0, 0, 0, 0.45);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    z-index: 2;
+  }
+
+  .email-icon-wrapper[open] .email-display {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
   }
 }
 
@@ -1495,4 +1654,39 @@ figure.cover {
 
 mjx-container[jax="CHTML"][display="true"] {
   overflow-x: auto;
+}
+.simple-posts {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    border-bottom: 1px solid var(--global-divider-color);
+    padding-bottom: 1rem;
+  }
+
+  li:last-child {
+    border-bottom: 0;
+  }
+
+  .post-title {
+    font-size: 1.35rem;
+
+    a {
+      color: var(--global-text-color);
+
+      &:hover {
+        color: var(--global-theme-color);
+        text-decoration: none;
+      }
+    }
+  }
+
+  .post-meta {
+    font-size: 0.9rem;
+  }
+
+  .post-description {
+    font-size: 1rem;
+    color: var(--global-text-color);
+  }
 }

@@ -302,7 +302,7 @@ There are currently 2 different ways of generating the CV page content. The firs
 
 What this means is, if there is no resume data defined in [\_config.yml](_config.yml) and loaded via a json file, it will load the contents of [\_data/cv.yml](_data/cv.yml) as fallback.
 
-[![CV Preview](readme_preview/cv.png)](https://alshedivat.github.io/al-folio/cv/)
+[![CV Preview](readme_preview/cv.png)](https://alshedivat.github.io/al-folio/resume/)
 
 ---
 

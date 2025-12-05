@@ -35,6 +35,11 @@ layout: default
         {% if page.profile.more_info %}
           <div class="more-info">{{ page.profile.more_info }}</div>
         {% endif %}
+        {% if page.profile.social_links %}
+          <div class="contact-icons">
+            {% include social.liquid allowed=page.profile.social_links %}
+          </div>
+        {% endif %}
       </div>
     {% endif %}
 
@@ -71,6 +76,10 @@ layout: default
 
         <div class="contact-note">{{ site.contact_note }}</div>
       </div>
+    {% endif %}
+
+    {% if page.clustrmaps %}
+      {% include clustrmaps_embed.liquid %}
     {% endif %}
 
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
