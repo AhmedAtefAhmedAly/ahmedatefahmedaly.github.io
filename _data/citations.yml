@@ -1,12 +1,12 @@
 metadata:
-  last_updated: '2025-12-08'
+  last_updated: '2025-12-15'
 papers:
   r3SGloUAAAAJ:9yKSN-GCB0IC:
     citations: 0
     title: 'CardioBench: Do Echocardiography Foundation Models Generalize Beyond the Lab?'
     year: '2025'
   r3SGloUAAAAJ:d1gkVwhDpl0C:
-    citations: 0
+    citations: 7
     title: A Multimodal and Multi-centric Head and Neck Cancer Dataset for Segmentation, Diagnosis and Outcome Prediction
     year: '2025'
   r3SGloUAAAAJ:u5HHmVD_uO8C:
