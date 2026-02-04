@@ -12,3 +12,5 @@ node_modules/
 vendor
 .idea
 .venv
+*.__pyc__
+.pip-packages/
