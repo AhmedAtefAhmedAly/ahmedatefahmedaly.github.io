@@ -1,8 +1,8 @@
 metadata:
-  last_updated: '2026-04-20'
+  last_updated: '2026-04-27'
 papers:
   r3SGloUAAAAJ:9yKSN-GCB0IC:
-    citations: 0
+    citations: 1
     title: 'CardioBench: Do Echocardiography Foundation Models Generalize Beyond the Lab?'
     year: '2025'
   r3SGloUAAAAJ:d1gkVwhDpl0C:
