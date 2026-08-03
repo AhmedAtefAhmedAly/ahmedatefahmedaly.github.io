@@ -49,11 +49,6 @@ ninja.data = [{
           description: "Do echocardiography foundation models generalize beyond the lab? (IJCAI-ECAI 2026)",
           section: "Projects",handler: () => {
               window.location.href = "/projects/cardiobench/";
-            },},{id: "projects-echovision",
-          title: 'EchoVision',
-          description: "A vision-language foundation model for echocardiography trained on 4M echo videos",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/echovision/";
             },},{id: "projects-surgical-room-understanding",
           title: 'Surgical Room Understanding',
           description: "Real-time multimodal pipeline for surgical room understanding at Labib AI",
