@@ -25,9 +25,9 @@ latest_posts:
 clustrmaps: true
 ---
 
-I am a Research Engineer at the <a href='https://mbzuai-biomedia.com/biomedia/'>BioMedIA Lab</a> at <a href='https://mbzuai.ac.ae/'>MBZUAI</a>, where I work on echocardiography foundation models under Prof. Mohammad Yaqub, extending view-aware pretraining toward temporal-causal objectives and automated clinical report generation.
+I am a Research Engineer at the <a href='https://mbzuai-biomedia.com/biomedia/'>BioMedIA Lab</a> at <a href='https://mbzuai.ac.ae/'>MBZUAI</a>, where I work on echocardiography foundation models under Prof. Mohammad Yaqub.
 
-I hold an MSc in Computer Vision from MBZUAI, where my thesis introduced EchoVision, a vision-language foundation model for echocardiography trained on 4M echo videos using view-aware contrastive pretraining. Alongside my research, I am a co-founder of Koralyze AI, a football analytics startup that generates player tracking and event data directly from broadcast footage, and work part-time as a Machine Learning Engineer at Labib AI on edge AI and healthcare applications.
+I hold an MSc in Computer Vision from MBZUAI. Alongside my research, I am a co-founder of Koralyze AI, a football analytics startup that generates player tracking and event data directly from broadcast footage, and work part-time as a Machine Learning Engineer at Labib AI on edge AI and healthcare applications.
 
 Looking forward, I aim to keep building the next generation of medical foundation models and deployable AI systems for patient care.
 
