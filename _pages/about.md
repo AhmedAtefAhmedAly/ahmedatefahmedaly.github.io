@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Computer Vision | AI for Healthcare | <a href='https://mbzuai-biomedia.com/biomedia/'>BioMedIA Lab</a> 
+subtitle: Computer Vision | AI for Healthcare | <a href='https://mbzuai-biomedia.com/'>BioMedIA Lab</a> 
 
 profile:
   align: right
@@ -25,7 +25,7 @@ latest_posts:
 clustrmaps: true
 ---
 
-I am a Research Engineer at the <a href='https://mbzuai-biomedia.com/biomedia/'>BioMedIA Lab</a> at <a href='https://mbzuai.ac.ae/'>MBZUAI</a>, where I work on echocardiography foundation models under Prof. Mohammad Yaqub.
+I am a Research Engineer at the <a href='https://mbzuai-biomedia.com/'>BioMedIA Lab</a> at <a href='https://mbzuai.ac.ae/'>MBZUAI</a>, where I work on echocardiography foundation models under Prof. Mohammad Yaqub.
 
 I hold an MSc in Computer Vision from MBZUAI. Alongside my research, I am a co-founder of <a href='https://koralyze.com/'>Koralyze AI</a>, a football analytics startup that generates player tracking and event data directly from broadcast footage, and work part-time as a Machine Learning Engineer at Labib AI on edge AI and healthcare applications.
 
