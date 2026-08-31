@@ -9,14 +9,7 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-blog",
-          title: "blog",
-          description: "A simple reverse‑chronological list of posts.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/blog/";
-          },
-        },{id: "nav-publications",
+  },{id: "nav-publications",
           title: "publications",
           description: "publications in reversed chronological order.",
           section: "Navigation",
@@ -39,7 +32,7 @@ ninja.data = [{
           },
         },{id: "nav-resume",
           title: "resume",
-          description: "This page will contain my career resume. Last updated 23/07/2026",
+          description: "My resume, last updated July 2026.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/resume/";
