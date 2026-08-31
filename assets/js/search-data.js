@@ -37,13 +37,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/resume/";
           },
-        },{id: "news-we-finished-2nd-overall-in-the-miccai-ms-multi-spine-challenge-on-multiple-sclerosis-spinal-cord-lesion-detection-from-multi-sequence-mris",
-          title: 'We finished 2nd overall in the MICCAI MS-Multi-Spine challenge on multiple sclerosis spinal...',
-          description: "",
-          section: "News",},{id: "news-our-paper-cardiobench-do-echocardiography-foundation-models-generalize-beyond-the-lab-was-accepted-at-ijcai-ecai-2026",
-          title: 'Our paper CardioBench: Do Echocardiography Foundation Models Generalize Beyond the Lab? was accepted...',
-          description: "",
-          section: "News",},{id: "projects-cardiobench",
+        },{id: "projects-cardiobench",
           title: 'CardioBench',
           description: "Do echocardiography foundation models generalize beyond the lab? (IJCAI-ECAI 2026)",
           section: "Projects",handler: () => {
