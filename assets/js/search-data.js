@@ -47,11 +47,11 @@ ninja.data = [{
           description: "Co-founded sports analytics startup turning broadcast footage into player tracking and event data",
           section: "Projects",handler: () => {
               window.location.href = "/projects/koralyze/";
-            },},{id: "projects-surgical-room-understanding",
-          title: 'Surgical Room Understanding',
-          description: "Real-time multimodal pipeline for surgical room understanding at Labib AI",
+            },},{id: "projects-labib-ai",
+          title: 'Labib AI',
+          description: "Machine learning engineering at a UAE-based AI company, from internship to part-time role",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/surgical-room/";
+              window.location.href = "/projects/labib-ai/";
             },},{
         id: 'social-email',
         title: 'email',
