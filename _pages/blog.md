@@ -3,7 +3,7 @@ layout: page
 permalink: /blog/
 title: blog
 description: A simple reverse‑chronological list of posts.
-nav: true
+nav: false
 nav_order: 1
 ---
 

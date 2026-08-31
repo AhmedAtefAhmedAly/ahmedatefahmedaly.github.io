@@ -2,6 +2,7 @@
 layout: page
 title: Surgical Room Understanding
 description: Real-time multimodal pipeline for surgical room understanding at Labib AI
+img: assets/img/labib_ai_logo.png
 importance: 3
 category: industry
 ---
