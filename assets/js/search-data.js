@@ -42,6 +42,11 @@ ninja.data = [{
           description: "Do echocardiography foundation models generalize beyond the lab? (IJCAI-ECAI 2026)",
           section: "Projects",handler: () => {
               window.location.href = "/projects/cardiobench/";
+            },},{id: "projects-koralyze-ai",
+          title: 'Koralyze AI',
+          description: "Co-founded sports analytics startup turning broadcast footage into player tracking and event data",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/koralyze/";
             },},{id: "projects-surgical-room-understanding",
           title: 'Surgical Room Understanding',
           description: "Real-time multimodal pipeline for surgical room understanding at Labib AI",
